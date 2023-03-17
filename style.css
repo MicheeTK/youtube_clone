@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+}
+.youtube-logo {
+  max-width: 120px;
+  max-height: 20px;
+  margin-left: 10px;
+}
+
+.search {
+  display: flex;
+  border: 1px solid #cccccc;
+}
+
+.search input,
+.search button {
+  border: none;
+}
