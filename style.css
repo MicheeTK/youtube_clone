@@ -20,9 +20,48 @@
 .search {
   display: flex;
   border: 1px solid #cccccc;
+  width: 620px;
+  margin-right: 10px;
 }
 
-.search input,
+.search input {
+  border: none;
+  width: 90%;
+  padding: 15px;
+}
+
 .search button {
   border: none;
+  width: 10%;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.material-icons {
+  color: #606060;
+  margin-right: 10px;
+}
+
+.search button i {
+  margin: 0;
+}
+
+.main-body {
+  display: flex;
+  height: calc(100vh - 56px);
+}
+
+.categories {
+  width: 240px;
+  height: 100%;
+  background-color: white;
+}
+
+.videos {
+  width: calc(100vw - 240px);
+  height: 100%;
+  background-color: #f9f9f9;
+  border-top: 1px solid #cccccc;
 }
