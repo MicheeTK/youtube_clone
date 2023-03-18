@@ -92,9 +92,8 @@ body {
   background-color: #f3f2f2;
 }
 
-.youtube-shorts-svg,
-.youtube-music-svg,
-.category i {
+.svg-logo-resize,
+.material-icons {
   width: 24px;
   height: 24px;
   margin-right: 0;
