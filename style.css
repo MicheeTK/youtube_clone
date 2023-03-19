@@ -149,19 +149,51 @@ footer span {
 
 .video-grid {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   column-gap: 15px;
+  row-gap: 35px;
 }
 
 .video {
-  width: 25%;
-  background-color: red;
+  width: 30%;
+  max-height: 330px;
+  cursor: pointer;
 }
 
 .video .thumbnail img {
   width: 100%;
+  height: 203px;
+  border-radius: 12px;
+}
+
+.video .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .video .profile img {
   border-radius: 50%;
   block-size: 36px;
+}
+
+.video .profile-vid-title-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  width: 90%;
+}
+
+.video .video-title {
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.video .posted-by {
+  font-size: 14px;
+  color: #606060;
+  margin-left: 48px;
 }
