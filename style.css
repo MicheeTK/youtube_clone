@@ -8,6 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 .navbar {
@@ -29,21 +30,31 @@ body {
   border: 1px solid #cccccc;
   width: 620px;
   margin-right: 10px;
+  border: none;
 }
 
 .search input {
-  border: none;
+  border: 0.8px solid rgb(204, 204, 204);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
   width: 90%;
+  height: 40px;
   padding: 15px;
+  font-size: 16px;
 }
 
 .search button {
-  border: none;
+  border: 0.8px solid rgb(204, 204, 204);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
   width: 10%;
+  font-size: 13px;
+  background-color: rgb(248, 248, 248);
 }
 
 .search-bar {
   display: flex;
+  align-items: center;
 }
 
 .material-icons {
@@ -102,15 +113,8 @@ body {
   margin-right: 0;
 }
 
-.main-body {
-  width: calc(100vw - 240px);
-  height: calc(100vh - 56px);
-  background-color: #f9f9f9;
-}
-
 .content {
   display: flex;
-  overflow: hidden;
 }
 
 .subscription-heading {
@@ -133,4 +137,31 @@ footer span {
 .copyright {
   padding: 16px 24px;
   font-size: 13px;
+}
+
+.main-body {
+  width: calc(100vw - 240px);
+  height: calc(100vh - 56px);
+  background-color: #f9f9f9;
+  margin: 16px;
+  overflow-y: scroll;
+}
+
+.video-grid {
+  display: flex;
+  column-gap: 15px;
+}
+
+.video {
+  width: 25%;
+  background-color: red;
+}
+
+.video .thumbnail img {
+  width: 100%;
+}
+
+.video .profile img {
+  border-radius: 50%;
+  block-size: 36px;
 }
